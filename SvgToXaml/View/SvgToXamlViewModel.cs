@@ -104,7 +104,7 @@ namespace SvgToXaml.ViewModel
 
             openFileDialog = new OpenFileDialog();
 
-            openFileDialog.Filter      = "SVG 파일 (*.svg)|*.svg";
+            openFileDialog.Filter      = "SVG File (*.svg)|*.svg";
             openFileDialog.FilterIndex = 1;
             openFileDialog.DefaultExt  = ".svg";
             openFileDialog.Multiselect = true;
@@ -144,7 +144,7 @@ namespace SvgToXaml.ViewModel
         {                        
             openFileDialog = new OpenFileDialog();
 
-            openFileDialog.Filter      = "Xaml 파일 (*.xaml)|*.xaml";
+            openFileDialog.Filter      = "Xaml File (*.xaml)|*.xaml";
             openFileDialog.FilterIndex = 1;
             openFileDialog.DefaultExt  = ".xaml";
             openFileDialog.Multiselect = true;

@@ -9,7 +9,7 @@
 	xmlns:viewers="clr-namespace:SvgToXaml.View"
 	WindowStartupLocation="CenterScreen"
 	ResizeMode="NoResize"
-	Title="SVG 파일을 XAML로 변환하기"
+	Title="Convert SVG files to Xaml code"
 	Height="800"
 	Width="900">
     <FrameworkElement.Resources>

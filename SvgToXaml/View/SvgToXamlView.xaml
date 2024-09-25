@@ -133,7 +133,7 @@
 				Margin="0,15,15,15"
 				Width="100"
 				Height="30"
-				Content="파일 열기"
+				Content="File Open"
 				Command="{Binding OpenFileCommand}" />
 			<StackPanel
 				x:Name="ImagePreviewChanger"
@@ -195,7 +195,7 @@
 				<ListView.View>
 					<GridView>
 						<GridViewColumn
-							Header="번호"
+							Header="No."
 							Width="60">
 							<GridViewColumn.CellTemplate>
 								<DataTemplate>
@@ -209,7 +209,7 @@
 							</GridViewColumn.CellTemplate>
 						</GridViewColumn>
 						<GridViewColumn
-							Header="이미지"
+							Header="Image"
 							Width="Auto">
 							<GridViewColumn.HeaderContainerStyle>
 								<Style
@@ -239,7 +239,7 @@
 							</GridViewColumn.CellTemplate>
 						</GridViewColumn>
 						<GridViewColumn
-							Header="리소스"
+							Header="Resource"
 							Width="Auto"
 							DisplayMemberBinding="{Binding Xaml}">
 							<GridViewColumn.HeaderContainerStyle>
@@ -275,7 +275,7 @@
 				Margin="0,15,15,15"
 				Width="100"
 				Height="30"
-				Content="파일 열기"
+				Content="File Open"
 				Command="{Binding RscDicOpenFileCommand}" />
 		</Grid>
 	</Grid>
