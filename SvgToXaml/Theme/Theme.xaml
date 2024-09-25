@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:o="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <DrawingBrush x:Key="checkeredBackground" 
+            ViewportUnits="Absolute"
+            Viewport="0 0 15 15"
+            TileMode="Tile"
+            o:Freeze="True">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="#A9A9A9">
+                    <GeometryDrawing.Geometry>
+                        <RectangleGeometry Rect="0 0 1 1" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing
+                        Brush="#d3d3d3"
+                        Geometry="M 0 0 L 0 0.5 0.5 0.5 0.5 1 1 1 1 0.5 0.5 0.5 0.5 0" />
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+</ResourceDictionary>
