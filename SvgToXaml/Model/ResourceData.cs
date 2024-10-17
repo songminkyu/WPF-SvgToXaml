@@ -24,8 +24,12 @@ namespace SvgToXaml.Model
         {
             get { return GetValue<int>(); }
             set { SetValue(value); }
+        }        
+        public string? ImageSize
+        {
+            get { return GetValue<string>(); }
+            set { SetValue(value); }
         }
-
         public string? Xaml
         {
             get { return GetValue<string>(); }

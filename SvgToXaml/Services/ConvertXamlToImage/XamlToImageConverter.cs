@@ -33,11 +33,18 @@ namespace SvgToXaml.SvgControlService
                     // DrawingImage에서 XAML 문자열을 추출
                     string xamlBlock = ExtractXamlBlockForKey(xamlContent, key.ToString());
 
+                    // Width와 Height 추출
+                    double width = drawingImage.Drawing.Bounds.Width;
+                    double height = drawingImage.Drawing.Bounds.Height;
+
                     // SvgInfoData 객체 생성
                     SvgInfoData svgInfo = new SvgInfoData
                     {
-                        toXaml  = xamlBlock,              // 추출한 XAML 내용
-                        viewSvg = drawingImage           // DrawingImage를 ImageSource로 변환
+                        resourceKey = key.ToString(),
+                        toXaml      = xamlBlock,            // 추출한 XAML 내용
+                        viewSvg     = drawingImage,         // DrawingImage를 ImageSource로 변환
+                        width       = width,
+                        height      = height
                     };
 
                     resources.Add(svgInfo);

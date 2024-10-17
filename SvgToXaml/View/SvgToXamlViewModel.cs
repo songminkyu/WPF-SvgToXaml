@@ -53,7 +53,12 @@ namespace SvgToXaml.ViewModel
                     int i = 1;
                     foreach (var resources in svgInfoDatas!)
                     {
-                        ResourceList.Add(new ResourceDictionaryData() { Number = i, ResourceImage = resources.viewSvg, Xaml = resources.toXaml });
+                        ResourceList.Add(new ResourceDictionaryData() { 
+                            Number = i, 
+                            ResourceImage = resources.viewSvg,
+                            Xaml = resources.toXaml,
+                            ImageSize = string.Format("(H : {0}, W : {1})", resources.height, resources.width)
+                        });
                         i++;
                     }
                 }                

@@ -194,21 +194,21 @@
 				ItemsSource="{Binding ResourceList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
 				<ListView.View>
 					<GridView>
-						<GridViewColumn
+                        <GridViewColumn
 							Header="No."
 							Width="60">
-							<GridViewColumn.CellTemplate>
-								<DataTemplate>
-									<TextBlock
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock
 										FontSize="16"
 										HorizontalAlignment="Center"
 										VerticalAlignment="Center"
 										Margin="15,0"
 										Text="{Binding Number}" />
-								</DataTemplate>
-							</GridViewColumn.CellTemplate>
-						</GridViewColumn>
-						<GridViewColumn
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn
 							Header="Image"
 							Width="Auto">
 							<GridViewColumn.HeaderContainerStyle>
@@ -238,7 +238,20 @@
 								</DataTemplate>
 							</GridViewColumn.CellTemplate>
 						</GridViewColumn>
-						<GridViewColumn
+                        <GridViewColumn
+							Header="Size"                            
+							Width="165">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock
+										FontSize="13"										
+                                        Margin="15,0,0,0"
+                                        TextTrimming="CharacterEllipsis"
+										Text="{Binding ImageSize}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn
 							Header="Resource"
 							Width="Auto"
 							DisplayMemberBinding="{Binding Xaml}">
